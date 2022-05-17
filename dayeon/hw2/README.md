@@ -15,4 +15,4 @@
 
 ## 📌 Use Case Class Diagram
 
-<img width="590" alt="purchase_product_class_diagram" src="https://user-images.githubusercontent.com/62105312/168835207-3da577c3-38f2-41b8-b5a8-460d7fbe729a.png">
+<img width="590" alt="purchase_product_class_diagram" src="https://user-images.githubusercontent.com/62105312/168836122-8c73b31f-def3-4856-9cba-dfba8e9f70e6.png">
