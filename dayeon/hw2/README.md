@@ -33,7 +33,7 @@
 
 ## 📌 Communication Diagram
 
-<img width="641" alt="purchase_product_communication_diagram" src="https://user-images.githubusercontent.com/62105312/168835185-88d3068d-0ec0-4925-a159-05df31a8f941.png">
+<img width="641" alt="purchase_product_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169061505-1c3c0ced-76bc-417a-86c6-34fd4d6e0026.png">
 
 ## 📌 Use Case Class Diagram
 
