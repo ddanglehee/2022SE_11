@@ -78,4 +78,4 @@
 
 ## 📌 Use Case Class Diagram
 
-<img width="590" alt="check_purchased_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/168971148-68d77c31-90b2-497d-8c91-47722cb5ede6.png">
+<img width="590" alt="check_purchased_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/169042486-d925e61d-6077-4217-842f-03311405e765.png">
