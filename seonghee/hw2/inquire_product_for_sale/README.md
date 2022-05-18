@@ -9,8 +9,8 @@
 
 
 ## 📌 Communication Diagram
-<img width="569" alt="inquire_product_for_sale_communication_diagram" src="https://user-images.githubusercontent.com/87361140/168960982-afe8582e-cd30-4439-ae9a-b3a26d3fe6e9.png">
+<img width="668" alt="inquire_product_for_sale_communication_diagram" src="https://user-images.githubusercontent.com/87361140/169095021-8e8e2468-e443-4be8-aa08-c6fbccbde14a.png">
 
 ## 📌 Use Case Class Diagram
-<img width="516" alt="inquire_product_for_sale_class_diagram" src="https://user-images.githubusercontent.com/87361140/168960984-5bd79897-5b6a-4542-8b7e-0b9297e96d00.png">
+<img width="557" alt="inquire_product_for_sale_class_diagram" src="https://user-images.githubusercontent.com/87361140/169095010-6f836d07-c698-43e0-b148-046b33a0e649.png">
 

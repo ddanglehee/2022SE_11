@@ -744,7 +744,7 @@
 													},
 													"font": "Arial;13;0",
 													"left": 48.72998046875,
-													"top": 37,
+													"top": 29,
 													"width": 167.91796875,
 													"height": 13,
 													"text": "Inquire list of product for sale"
@@ -757,7 +757,7 @@
 													},
 													"font": "Arial;13;1",
 													"left": 29,
-													"top": 37,
+													"top": 29,
 													"width": 14.72998046875,
 													"height": 13,
 													"text": "sd"
@@ -765,8 +765,8 @@
 											],
 											"font": "Arial;13;0",
 											"left": 24,
-											"top": 32,
-											"width": 692,
+											"top": 24,
+											"width": 729,
 											"height": 273,
 											"nameLabel": {
 												"$ref": "AAAAAAGAvXOkvpAghnI="
@@ -2412,13 +2412,13 @@
 														"$ref": "AAAAAAGA1LoOCX6xD4M="
 													},
 													"font": "Arial;13;0",
-													"left": 476.29833984375,
+													"left": 535.29833984375,
 													"top": 160,
 													"width": 272.4033203125,
 													"height": 13,
-													"alpha": 1.5707963267948966,
-													"distance": 10,
-													"text": "1.1* : getProductForSaleDetails()"
+													"alpha": 0.1678958953252186,
+													"distance": 59.841457201508724,
+													"text": "1.1* : getProductDetails()"
 												},
 												{
 													"_type": "NodeLabelView",
@@ -2777,7 +2777,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGAvXOkvpAdXDQ="
 									},
-									"name": "getProductForSaleDetails()",
+									"name": "getProductDetails()",
 									"source": {
 										"$ref": "AAAAAAGAvXjnw5C7nBA="
 									},
