@@ -10,7 +10,7 @@
 
 ## 📌 Communication Diagram
 
-<img width="641" alt="https://user-images.githubusercontent.com/62105312/169038524-da174ed9-a444-4f68-8709-08c8947914ff.png">
+<img width="641" alt="check_purchased_list_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169038524-da174ed9-a444-4f68-8709-08c8947914ff.png">
 
 ## 📌 Use Case Class Diagram
 
