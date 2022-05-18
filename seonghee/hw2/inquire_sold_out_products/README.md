@@ -8,7 +8,7 @@
 |2. 판매자가 판매 완료한 의류 상품을 조회한다.||
 
 ## 📌 Communication Diagram
-<img width="703" alt="inquire_sold_out_products_communication_diagram" src="https://user-images.githubusercontent.com/87361140/168425436-d606191d-602b-4a1c-9c3c-c13ae4f49782.png">
+<img width="635" alt="inquire_sold_out_products_communication_diagram" src="https://user-images.githubusercontent.com/87361140/168961698-ffa8bb8d-25ba-4eb5-ad79-d744c3d49e03.png">
 
 ## 📌 Use Case Class Diagram
-<img width="517" alt="inquire_sold_out_products_class_diagram" src="https://user-images.githubusercontent.com/87361140/168425446-217e376c-465a-403c-a5f0-44f013d1ec7e.png">
+<img width="493" alt="inquire_sold_out_products_class_diagram" src="https://user-images.githubusercontent.com/87361140/168961701-6847ece8-8991-4c19-84d6-eaac183bf143.png">
