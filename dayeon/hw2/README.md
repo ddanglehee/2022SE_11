@@ -53,11 +53,11 @@
 
 ## 📌 Communication Diagram
 
-<img width="641" alt="check_purchased_list_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169038524-da174ed9-a444-4f68-8709-08c8947914ff.png">
+<img width="641" alt="check_purchased_list_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169082713-e78863ed-ba58-4a65-89f5-209ec63046ea.png">
 
 ## 📌 Use Case Class Diagram
 
-<img width="590" alt="check_purchased_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/169042486-d925e61d-6077-4217-842f-03311405e765.png">
+<img width="590" alt="check_purchased_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/169083303-c0d6bf1e-04e3-42af-b08d-594dcff61ae1.png">
 
 ## 4. 구매만족도 평가 기능
 
@@ -74,8 +74,8 @@
 
 ## 📌 Communication Diagram
 
-<img width="641" alt="evaluate_rating_communication_diagram" src="https://user-images.githubusercontent.com/62105312/168723427-3ad29930-c666-4903-8a4d-36cdd249df49.png">
+<img width="641" alt="evaluate_rating_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169084267-38348969-915a-4d2b-89cb-8428d1b42f7b.png">
 
 ## 📌 Use Case Class Diagram
 
-<img width="590" alt="evaluate_rating_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/168723430-dd5fe180-cc9c-4d7b-941f-57853cba6517.png">
+<img width="590" alt="evaluate_rating_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/169084280-9fac364f-77ca-482c-93a0-1d5659e66aea.png">
