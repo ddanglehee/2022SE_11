@@ -33,13 +33,33 @@
 
 ## 📌 Communication Diagram
 
-<img width="641" alt="purchase_product_communication_diagram" src="https://user-images.githubusercontent.com/62105312/168835185-88d3068d-0ec0-4925-a159-05df31a8f941.png">
+<img width="641" alt="purchase_product_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169061505-1c3c0ced-76bc-417a-86c6-34fd4d6e0026.png">
 
 ## 📌 Use Case Class Diagram
 
-<img width="590" alt="purchase_product_class_diagram" src="https://user-images.githubusercontent.com/62105312/168836122-8c73b31f-def3-4856-9cba-dfba8e9f70e6.png">
+<img width="590" alt="purchase_product_class_diagram" src="https://user-images.githubusercontent.com/62105312/169075586-e8dc568f-4a8b-481c-9de3-2eb40a618baf.png">
 
 ## 3. 구매 내역 조회 기능
+
+## 📌 Use Case Diagram
+
+<img width="577" alt="check_purchase_list_use_case_diagram" src="https://user-images.githubusercontent.com/62105312/168620104-1794524f-de5e-41e6-8ed5-4c5454c3ecb1.png">
+
+## 📌 Use Case Description
+
+| Actor Action                 | System Response                                            |
+| ---------------------------- | ---------------------------------------------------------- |
+| 1. 구매 내역 조회를 클릭한다 | 2. 해당 회원의 구매 내역을 상품명의 오름차순으로 출력한다. |
+
+## 📌 Communication Diagram
+
+<img width="641" alt="check_purchased_list_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169082713-e78863ed-ba58-4a65-89f5-209ec63046ea.png">
+
+## 📌 Use Case Class Diagram
+
+<img width="590" alt="check_purchased_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/169083303-c0d6bf1e-04e3-42af-b08d-594dcff61ae1.png">
+
+## 4. 구매만족도 평가 기능
 
 ## 📌 Use Case Diagram
 
@@ -54,28 +74,8 @@
 
 ## 📌 Communication Diagram
 
-<img width="641" alt="evaluate_rating_communication_diagram" src="https://user-images.githubusercontent.com/62105312/168723427-3ad29930-c666-4903-8a4d-36cdd249df49.png">
+<img width="641" alt="evaluate_rating_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169084267-38348969-915a-4d2b-89cb-8428d1b42f7b.png">
 
 ## 📌 Use Case Class Diagram
 
-<img width="590" alt="evaluate_rating_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/168723430-dd5fe180-cc9c-4d7b-941f-57853cba6517.png">
-
-## 4. 구매만족도 평가 기능
-
-## 📌 Use Case Diagram
-
-<img width="577" alt="check_purchase_list_use_case_diagram" src="https://user-images.githubusercontent.com/62105312/168620104-1794524f-de5e-41e6-8ed5-4c5454c3ecb1.png">
-
-## 📌 Use Case Description
-
-| Actor Action                 | System Response                                            |
-| ---------------------------- | ---------------------------------------------------------- |
-| 1. 구매 내역 조회를 클릭한다 | 2. 해당 회원의 구매 내역을 상품명의 오름차순으로 출력한다. |
-
-## 📌 Communication Diagram
-
-<img width="641" alt="check_purchased_list_communication_diagram" src="https://user-images.githubusercontent.com/62105312/169038524-da174ed9-a444-4f68-8709-08c8947914ff.png">
-
-## 📌 Use Case Class Diagram
-
-<img width="590" alt="check_purchased_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/168971148-68d77c31-90b2-497d-8c91-47722cb5ede6.png">
+<img width="590" alt="evaluate_rating_list_class_diagram" src="https://user-images.githubusercontent.com/62105312/169084280-9fac364f-77ca-482c-93a0-1d5659e66aea.png">
