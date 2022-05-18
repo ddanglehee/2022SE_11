@@ -1,0 +1,83 @@
+[ddanglehee] Mon May 2 10:26:30 2022 +0900 최종 보고서 업데이트 f16bcae
+[ddanglehee] Mon May 2 10:23:42 2022 +0900 Use Case Description 수정 668c0a5
+[ddanglehee] Sun May 1 22:31:48 2022 +0900 불필요한 이미지 삭제 fe427d6
+[ddanglehee] Sun May 1 22:28:05 2022 +0900 Merge branch 'main' of https://github.com/ddanglehee/2022SE_11 93e78f7
+[ddanglehee] Sun May 1 22:27:17 2022 +0900 최종 Use case diagram과 보고서 4a24591
+[ddanglehee] Sun May 1 22:18:15 2022 +0900 최종 Use Case Diagram 이미지 추가 20a4d54
+[ddanglehee] Sun May 1 22:16:37 2022 +0900 Use Case Description 최종 수정 cabd66c
+[ddanglehee] Sun May 1 22:13:16 2022 +0900 Use Case Diagram 최종 수정 d190245
+[xkdlaldfjtnl] Sun May 1 22:09:44 2022 +0900 Merge pull request #22 from kimkisun0310/main 420b0d6
+[xkdlaldfjtnl] Sun May 1 22:07:56 2022 +0900 management_of_purchase 6b8560e
+[xkdlaldfjtnl] Sun May 1 22:06:51 2022 +0900 statistical_information 1b180eb
+[xkdlaldfjtnl] Sun May 1 22:06:25 2022 +0900 delete_tradelist ac7faee
+[Dayeon Lee] Sun May 1 22:04:33 2022 +0900 Merge pull request #21 from ddanglehee/fixing_requirements 9e64e45
+[dayonxxi] Sun May 1 21:49:48 2022 +0900 Fix Use Case Diagram files 957ceed
+[dayonxxi] Sun May 1 21:13:31 2022 +0900 Fix Use Case Diagram files 9a084c7
+[dayonxxi] Sun May 1 21:11:25 2022 +0900 Fix Requirement Lists in README file 83ba2b0
+[ddanglehee] Sun May 1 14:45:16 2022 +0900 Use case diagram 이미지 추가 b577747
+[dayonxxi] Sun May 1 13:03:45 2022 +0900 Fix Some  Requirement Lists dd6ac2d
+[xkdlaldfjtnl] Sun May 1 12:12:45 2022 +0900 Merge pull request #20 from kimkisun0310/main 37fb62c
+[xkdlaldfjtnl] Sun May 1 12:10:15 2022 +0900 edit statis use case diagram b737d42
+[dayonxxi] Sun May 1 11:24:59 2022 +0900 Dlete files 2ec220a
+[xkdlaldfjtnl] Sun May 1 11:22:11 2022 +0900 Merge pull request #19 from kimkisun0310/main 09b2aa8
+[xkdlaldfjtnl] Sun May 1 11:20:55 2022 +0900 Merge branch 'main' of https://github.com/ddanglehee/2022SE_11 c13ff95
+[xkdlaldfjtnl] Sun May 1 11:15:40 2022 +0900 통계내역 조회 1b82113
+[xkdlaldfjtnl] Sun May 1 11:15:17 2022 +0900 구매내역 삭제 ce94f6b
+[Dayeon Lee] Sun May 1 11:14:54 2022 +0900 Merge pull request #18 from ddanglehee/final afc3f2e
+[xkdlaldfjtnl] Sun May 1 11:14:34 2022 +0900 구매내역 관리 90fc36e
+[dayonxxi] Sun May 1 11:14:28 2022 +0900 Add include in diagram d9de52d
+[dayonxxi] Sun May 1 11:06:06 2022 +0900 Add new diagram files df81b50
+[Dayeon Lee] Sun May 1 10:56:37 2022 +0900 Merge pull request #13 from ddanglehee/soldout_list f1cba7b
+[dayonxxi] Sun May 1 10:56:02 2022 +0900 Add usecasediagram da82cbe
+[dayonxxi] Sun May 1 10:42:00 2022 +0900 Add dayeon folder 89b5006
+[장성희] Sun May 1 10:22:59 2022 +0900 Merge pull request #8 from ddanglehee/fix b392790
+[장성희] Sun May 1 10:22:49 2022 +0900 Merge pull request #4 from ddanglehee/additional_products_purchase 21ca342
+[Dayeon Lee] Sun May 1 10:19:43 2022 +0900 Merge pull request #12 from ddanglehee/product_management 31df8aa
+[장성희] Sun May 1 10:18:59 2022 +0900 Merge pull request #3 from ddanglehee/earn_point a9d059f
+[dayonxxi] Sun May 1 10:18:45 2022 +0900 Add product_management_UI 38e6dd4
+[장성희] Sun May 1 10:17:48 2022 +0900 Merge pull request #2 from ddanglehee/payment bf74b7b
+[장성희] Sun May 1 10:17:38 2022 +0900 Merge pull request #1 from ddanglehee/products_check_and_purchase c468d4d
+[dayonxxi] Sun May 1 09:56:28 2022 +0900 Fix conflicts 4464eff
+[Dayeon Lee] Sun May 1 09:50:54 2022 +0900 Merge pull request #11 from ddanglehee/login_logout 59e3904
+[dayonxxi] Sun May 1 09:50:13 2022 +0900 Fix conflicts 9a94087
+[Dayeon Lee] Sun May 1 09:46:55 2022 +0900 Merge pull request #10 from ddanglehee/unregister 82fd18c
+[dayonxxi] Sun May 1 09:46:30 2022 +0900 Fix conflicts 104ad9f
+[Dayeon Lee] Sun May 1 09:38:06 2022 +0900 Merge pull request #9 from ddanglehee/signup 928c56e
+[dayonxxi] Sun May 1 09:33:29 2022 +0900 Fix conflicts f579180
+[ddanglehee] Sun May 1 00:41:24 2022 +0900 UI Design Screen 수정 9ca54d7
+[ddanglehee] Sun May 1 00:27:15 2022 +0900 Use case description 수정 693c543
+[ddanglehee] Sat Apr 30 23:48:47 2022 +0900 결제 시스템 액터 추가 d38c8a0
+[xkdlaldfjtnl] Sat Apr 30 14:19:27 2022 +0900 Merge pull request #7 from kimkisun0310/statistical_information d8669e4
+[xkdlaldfjtnl] Sat Apr 30 14:16:18 2022 +0900 Update README.md c421dbf
+[ddanglehee] Sat Apr 30 12:26:12 2022 +0900 상품 환불 Event -> 상품 환불 완료 Event로 Actor 이름 명확하게 수정 182d3f6
+[ddanglehee] Sat Apr 30 12:23:57 2022 +0900 UI screen design 수정 3512de1
+[ddanglehee] Sat Apr 30 11:59:30 2022 +0900 상품 구매 기능, 상품 결제 기능 합치기 b112f71
+[xkdlaldfjtnl] Sat Apr 30 11:56:28 2022 +0900 Add files via upload 08a15f9
+[xkdlaldfjtnl] Sat Apr 30 11:56:15 2022 +0900 Delete 통계내역UI.jpg e3c2b19
+[xkdlaldfjtnl] Sat Apr 30 11:55:42 2022 +0900 Add files via upload 3f05d83
+[xkdlaldfjtnl] Sat Apr 30 11:55:18 2022 +0900 Delete 통계내역UI.jpg 97545f5
+[xkdlaldfjtnl] Sat Apr 30 11:54:24 2022 +0900 Add files via upload 7011ebe
+[xkdlaldfjtnl] Sat Apr 30 11:53:52 2022 +0900 Delete 통계내역UI.jpg 40beae8
+[xkdlaldfjtnl] Sat Apr 30 11:53:03 2022 +0900 Update README.md 49a096d
+[xkdlaldfjtnl] Sat Apr 30 11:52:41 2022 +0900 Add files via upload 55f5a72
+[xkdlaldfjtnl] Sat Apr 30 11:52:07 2022 +0900 Update README.md a670a95
+[xkdlaldfjtnl] Sat Apr 30 11:49:08 2022 +0900 Update README.md 88111f6
+[xkdlaldfjtnl] Sat Apr 30 11:48:37 2022 +0900 Add files via upload 5eaf066
+[dayonxxi] Sat Apr 30 10:31:29 2022 +0900 Add soldout_list file without UI 15b3ce5
+[dayonxxi] Sat Apr 30 10:25:28 2022 +0900 Delete Wrong File ff234cc
+[dayonxxi] Sat Apr 30 10:24:39 2022 +0900 Add README file be59522
+[dayonxxi] Sat Apr 30 10:11:52 2022 +0900 Add product_management without UI_Screen_Design 0cfb04a
+[dayonxxi] Sat Apr 30 09:28:54 2022 +0900 Fix numbering 3894988
+[dayonxxi] Sat Apr 30 09:25:28 2022 +0900 Add login_logout d374c73
+[dayonxxi] Sat Apr 30 08:56:12 2022 +0900 Fix typo b8010bf
+[dayonxxi] Sat Apr 30 08:55:30 2022 +0900 Add Unregister 0c87140
+[dayonxxi] Sat Apr 30 06:29:09 2022 +0900 Fix typo bdff73f
+[dayonxxi] Sat Apr 30 06:26:25 2022 +0900 Add Signup files 4dc88ed
+[ddanglehee] Sat Apr 30 01:50:36 2022 +0900 Use case description 수정 c2f9520
+[xkdlaldfjtnl] Fri Apr 29 22:46:43 2022 +0900 Update README.md 4160fe9
+[xkdlaldfjtnl] Fri Apr 29 22:45:46 2022 +0900 Add files via upload 1e054df
+[ddanglehee] Fri Apr 29 00:25:25 2022 +0900 추가 상품 구매 기능 b23c7e5
+[ddanglehee] Thu Apr 28 23:46:30 2022 +0900 포인트 적립 기능 7e9e466
+[ddanglehee] Thu Apr 28 22:26:18 2022 +0900 결제 기능 c578096
+[ddanglehee] Thu Apr 28 08:03:56 2022 +0900 상품 정보 조회 및 상품 구매 기능 cc4586e
+[장성희] Sun Apr 24 10:06:45 2022 +0900 Initial commit ee3b949
