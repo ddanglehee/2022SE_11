@@ -7,9 +7,9 @@
 |1. 판매자는 상품명, 제작회사명, 가격, 수량 정보를 입력하여 의류 상품을 등록한다.|2. '상품 등록이 완료되었습니다.'라는 메시지를 출력한다.|
 
 ## 📌 Communication Diagram
-<img width="641" alt="register_product_communication_diagram" src="https://user-images.githubusercontent.com/87361140/168300979-6d33b1f9-dbcb-4081-a05f-60adea2ad2b3.png">
-
+<img width="639" alt="register_product_communication_diagram" src="https://user-images.githubusercontent.com/87361140/168935969-9821bddd-4ce6-4bc3-b725-99a8909a5473.png">
 
 ## 📌 Use Case Class Diagram
-<img width="590" alt="register_product_class_diagram" src="https://user-images.githubusercontent.com/87361140/168301210-0f16f6a0-9aa4-454b-ab6e-24334e2dc3a0.png">
+<img width="607" alt="register_product_class_diagram" src="https://user-images.githubusercontent.com/87361140/168935806-ded9f720-7369-48c5-b1ae-7aa53f4b8199.png">
+
 
