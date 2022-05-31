@@ -26,7 +26,7 @@ void PurchaseProductUI::purchaseProduct()
     {
         bool purchaseSucceeded = this->controller->purchaseProduct();
         if(purchaseSucceeded) {
-            fout<< "> " + to_string(searchedProduct->getSellerId()) + " " + searchedProduct->getName()<< endl;
+            fout<< "> " + searchedProduct->getSellerId() + " " + searchedProduct->getName()<< endl;
             searchedProduct = NULL;
         } else {
             fout<< ""<< endl;

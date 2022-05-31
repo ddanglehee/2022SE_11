@@ -10,7 +10,7 @@ using namespace std;
 class User
 {
 private:
-    int Id;
+    string Id;
     ProductCollection productForSaleList;
     ProductCollection purchasedProductList;
 public:
@@ -18,7 +18,7 @@ public:
     void updateProductForSale(Product *product);
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
-    int getId();
+    string getId();
 };
 
 #endif

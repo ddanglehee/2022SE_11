@@ -2,6 +2,8 @@
 #include <fstream>
 #include "searchProduct.h"
 #include "purchaseProduct.h"
+#include "evaluateSatisfaction.h"
+#include "checkPurchasedProduct.h"
 #include "RegisterProduct.h"
 #include "InquireSalesStatistics.h"
 #include "InquireProductsForSale.h"
@@ -82,11 +84,11 @@ void doTask()
                         break;
                     // 상품 구매 내역 조회
                     case 3:
-                        
+                        CheckPurchasedProduct();
                         break;
                     // 상품 구매만족도 평가
                     case 4:
-                        
+                        EvaluateSatisfaction();
                         break;
                         
                     default:

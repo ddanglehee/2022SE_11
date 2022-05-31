@@ -36,7 +36,7 @@ void User::updateProductForSale(Product *product)
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
 */
-int User::getId()
+string User::getId()
 {
     return this->Id;
 }

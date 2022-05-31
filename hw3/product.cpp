@@ -13,7 +13,7 @@ string Product::getName()
 
 string Product::getProductDetails()
 {
-    string productDetails = to_string(sellerId) + " " + name + " " + company + " " + to_string(price) + " " + to_string(stock) + " " + to_string(averageSatisfaction);
+    string productDetails = sellerId + " " + name + " " + company + " " + to_string(price) + " " + to_string(stock) + " " + to_string(averageSatisfaction);
     
     return productDetails;
 }
@@ -24,9 +24,7 @@ void Product::updateStock()
     this->salesQuantity++;
 }
 
-
-
-int Product::getSellerId()
+string Product::getSellerId()
 {
     return this->sellerId;
 }
@@ -49,6 +47,12 @@ int ProductCollection::getOwnedProductSize()
 int Product::getStock()
 {
     return this->stock;
+}
+
+void Product::updateAverageSatisfaction(int satisfaction)
+{
+    this->averageSatisfaction += satisfaction;
+    this->averageSatisfaction = round((double)this->averageSatisfaction / (double)this-> salesQuantity);
 }
 
 /*
