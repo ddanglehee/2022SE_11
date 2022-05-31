@@ -3,7 +3,10 @@
 
 ## 📌 Communication diagram
 ### 상품 정보 검색
-![image](https://user-images.githubusercontent.com/87361140/170879134-0e3fa1c4-b61c-4726-97dc-6dcd88dbeaa8.png)
+<img width="588" alt="image" src="https://user-images.githubusercontent.com/87361140/170879134-0e3fa1c4-b61c-4726-97dc-6dcd88dbeaa8.png">
+
+### 상품 구매
+<img width="588" alt="image" src="https://user-images.githubusercontent.com/87361140/171074342-f148cf1c-f44f-435f-ac3d-42f55cc76e7c.png">
 
 ## 📌 Design class diagram
-<img width="668" alt="image" src="https://user-images.githubusercontent.com/87361140/170880757-44c67b12-ae44-4d07-ae39-1a5e5070a47e.png">
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/87361140/171075642-868de69b-3fbc-44bb-9f41-62c536561c91.png">
