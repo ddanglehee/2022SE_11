@@ -2,6 +2,13 @@
 #include <fstream>
 #include "searchProduct.h"
 #include "purchaseProduct.h"
+#include "evaluateSatisfaction.h"
+#include "checkPurchasedProduct.h"
+#include "RegisterProduct.h"
+#include "InquireSalesStatistics.h"
+#include "InquireProductsForSale.h"
+#include "InquireSoldOutProduct.h"
+
 
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -40,6 +47,29 @@ void doTask()
         
         switch(menu_level_1)
         {
+            case 3:
+            {
+                switch (menu_level_2) {
+                    case 1:
+                    {
+                        RegisterProduct::run();
+                        break;
+                    }
+                    case 2:
+                    {
+                        InquireProductsForSale::run();
+                        break;
+                    }
+                    case 3:
+                    {
+                        InquireSoldOutProduct::run();
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }
+
             case 4:
             {
                 switch(menu_level_2)
@@ -54,11 +84,11 @@ void doTask()
                         break;
                     // 상품 구매 내역 조회
                     case 3:
-                        
+                        CheckPurchasedProduct();
                         break;
                     // 상품 구매만족도 평가
                     case 4:
-                        
+                        EvaluateSatisfaction();
                         break;
                         
                     default:
@@ -69,7 +99,23 @@ void doTask()
             default:
                 is_program_exit = 1;
                 break;
+
+            case 5:
+            {
+                switch (menu_level_2) {
+                    case 1:
+                    {
+                        InquireSalesStatistics::run();
+                        break;
+                    }
+                    default:
+                        break;
+                }
+                break;
+            }
+
         }
+
     }
 }
 
