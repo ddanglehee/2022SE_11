@@ -29,9 +29,10 @@ public:
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
     string getId();
+    string getRrn();
     string getPassword();
     void eraseId();
-    bool checkValidation(string id, string password);
+    static bool checkValidation(string id, string password);
 };
 
 #endif

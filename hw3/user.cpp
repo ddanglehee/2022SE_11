@@ -1,5 +1,4 @@
 #include "user.h"
-#include <algorithm>
 
 using namespace std;
 
@@ -17,10 +16,11 @@ extern Product* searchedProduct;
 void User::addUser(string name, string rrn, string id, string password)
 {
     User user = {name, rrn, id, password};
-
-    if(is_permutation(userDB.begin(),userDB.end(),user))
+    
+    for(auto user:userDB)
     {
-        userDB.push_back(user);
+        if(user.getRrn() != rrn)
+            userDB.push_back(user);
     }
 }
 
@@ -29,14 +29,6 @@ void User::purchaseProduct()
     this->purchasedProductList.addProduct(*searchedProduct);
 }
 
-<<<<<<< HEAD
-=======
-ProductCollection User::getSaleProductList()
-{
-    return this->productForSaleList;
-}
-
->>>>>>> 075745d3f6228188202422f74118d81aa5f585ce
 /*
 	함수 이름 : User::updateProductForSale(Product *product)
 	기능	  : 새로운 판매 상품을 판매자의 판매 리스트에 update
@@ -71,6 +63,11 @@ ProductCollection User::getPurchasedProductList()
 string User::getId()
 {
     return this->id;
+}
+
+string User::getRrn()
+{
+    return this->rrn;
 }
 
 /*
@@ -109,7 +106,10 @@ void User::eraseId()
 */
 bool User::checkValidation(string id, string password)
 {
-    if(getId()==id && getPassword()==password)
-        return true;
-    else return false;
+    for(auto user:userDB)
+    {
+        if(user.getId()==id && user.getPassword()==password)
+            return true;
+    }
+    return false;
 }

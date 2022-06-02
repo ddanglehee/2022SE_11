@@ -48,8 +48,6 @@ void doTask()
     
     fin.open(INPUT_FILE_NAME);
     fout.open(OUTPUT_FILE_NAME);
-    User user;
-    loginUser = &user;
     while(!is_program_exit)
     {
         fin>> menu_level_1;
