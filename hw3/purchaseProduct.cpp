@@ -53,10 +53,10 @@ void PurchaseProductUI::purchaseProduct()
             fout<< "> " + searchedProduct->getSellerId() + " " + searchedProduct->getName()<< endl;
             searchedProduct = NULL;
         } else {
-            fout<< ""<< endl;
+            fout<< "";
         }
     } else {
-        fout<< ""<< endl;
+        fout<< "";
     }
     fout<<endl;
 }
