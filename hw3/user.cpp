@@ -11,12 +11,12 @@ void User::purchaseProduct()
 
 ProductCollection User::getPurchasedProductList()
 {
-    return this->purchasedProductList;
+    return (this->purchasedProductList);
 }
 
 ProductCollection User::getSaleProductList()
 {
-    return this->productForSaleList;
+    return (this->productForSaleList);
 }
 
 /*
@@ -27,7 +27,7 @@ ProductCollection User::getSaleProductList()
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
 */
-void User::updateProductForSale(Product *product)
+void User::updateProductForSale(Product* product)
 {
     this->productForSaleList.addProduct(*product);
 }

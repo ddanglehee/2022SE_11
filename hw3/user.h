@@ -15,7 +15,7 @@ private:
     ProductCollection purchasedProductList;
 public:
     void purchaseProduct();
-    void updateProductForSale(Product *product);
+    void updateProductForSale(Product* product);
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
     string getId();

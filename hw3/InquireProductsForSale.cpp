@@ -1,5 +1,5 @@
 #include "InquireProductsForSale.h"
-extern User loginUser;
+extern User* loginUser;
 
 /*
 	함수 이름 : InquireProductsForSale::run(User *user)
@@ -12,7 +12,7 @@ extern User loginUser;
 void InquireProductsForSale::run()
 {
     vector<tuple<string, string, int, int>> ret;
-    for(Product product : loginUser.getSaleProductList().getOwnProduct()){
+    for(Product product : loginUser->getSaleProductList().getOwnProduct()){
         ret.push_back(Product::getSaleProductDetails(product));
     }
     InquireProductForSaleUI::startInterface(ret);
@@ -30,6 +30,6 @@ void InquireProductForSaleUI::startInterface(vector<tuple<string, string, int, i
 {
     fout << "3.2. 등록 상품 조회\n";
     for(auto [name, company, price, stock] : productsForSale){
-        fout << name << " " << company << " " << price << " " << stock << "\n\n";
+        fout << "> " << name << " " << company << " " << price << " " << stock << "\n\n";
     }
 }

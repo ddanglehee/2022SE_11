@@ -1,5 +1,5 @@
 #include "InquireSalesStatistics.h"
-extern User loginUser;
+extern User* loginUser;
 
 /*
 	함수 이름 : InquireSalesStatistics::run(User *user)
@@ -12,7 +12,7 @@ extern User loginUser;
 void InquireSalesStatistics::run()
 {
     vector<tuple<string, int, double> > ret;
-    for(Product product : loginUser.getSaleProductList().getOwnProduct()){
+    for(Product product : loginUser->getSaleProductList().getOwnProduct()){
         if(product.getSalesQuantity()!=0){ //판매 수량이 1이상인 경우 체크
             ret.push_back({product.getName(), product.getTotalSales(), product.getAverageSatisfaction()});
         }

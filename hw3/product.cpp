@@ -2,7 +2,7 @@
 #include "user.h"
 
 extern vector<Product*> productDB;
-extern User loginUser;
+extern User* loginUser;
 
 using namespace std;
 
@@ -62,7 +62,7 @@ void Product::updateAverageSatisfaction(int satisfaction)
 */
 Product Product::createProduct(string name, string company, int price, int stock)
 {
-    Product product = {loginUser.getId(), name, company, price, stock}; // 생성자를 통한 새로운 Product 객체 생성
+    Product product = {loginUser->getId(), name, company, price, stock}; // 생성자를 통한 새로운 Product 객체 생성
     productDB.push_back(&product);
     return product; // 같은 상품 등록을 위해서 Product 객체 주소로 반환
 }
