@@ -23,7 +23,7 @@ public:
         this->id = id;
         this->password = password;
     }
-    void addUser(string name, string rrn, string id, string password);
+    static void addUser(string name, string rrn, string id, string password);
     void purchaseProduct();
     void updateProductForSale(Product* product);
     ProductCollection getSaleProductList();

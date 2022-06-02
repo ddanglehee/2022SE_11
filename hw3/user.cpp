@@ -16,12 +16,12 @@ extern Product* searchedProduct;
 void User::addUser(string name, string rrn, string id, string password)
 {
     User user = {name, rrn, id, password};
-    
-    for(auto user:userDB)
+    bool flag = true;
+    for(auto inUser: userDB)
     {
-        if(user.getRrn() != rrn)
-            userDB.push_back(user);
+        if(inUser.getRrn() == rrn)flag= false;
     }
+    if(flag)userDB.push_back(user);
 }
 
 /*
@@ -52,10 +52,6 @@ ProductCollection User::getPurchasedProductList()
     return (this->purchasedProductList);
 }
 
-void User::purchaseProduct()
-{
-    this->purchasedProductList.addProduct(*searchedProduct);
-}
 
 /*
 	함수 이름 : User::updateProductForSale(Product* product)
@@ -75,10 +71,6 @@ ProductCollection User::getSaleProductList()
     return this->productForSaleList;
 }
 
-ProductCollection User::getPurchasedProductList()
-{
-    return this->purchasedProductList;
-}
 
 /*
 	함수 이름 : User::getId()

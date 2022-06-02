@@ -1,4 +1,5 @@
 #include "checkPurchasedProduct.h"
+#include<algorithm>
 
 bool compare(Product a, Product b)
 {

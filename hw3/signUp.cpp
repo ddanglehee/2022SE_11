@@ -5,7 +5,6 @@ using namespace std;
 
 extern ifstream fin;
 extern ofstream fout;
-extern User* user;
 
 /*
 	함수 이름 : SignUp::addNewUser(string name, string rrn, string id, string password)
@@ -16,8 +15,8 @@ extern User* user;
     작성자 :   이다연
 */
 void SignUp::addNewUser(string name, string rrn, string id, string password)
-{   
-    user->addUser(name, rrn, id, password);
+{
+    User::addUser(name, rrn, id, password);
     fout<< ">" << name << " " << rrn << " " << id << " " << password << "\n";
 }
 
@@ -60,5 +59,5 @@ void SignUpUI::startInterface()
 {
     string name, rrn, id, password;
     fin >> name >> rrn >> id >> password;
-    submitForm(name, rrn, id, password);    
+    submitForm(name, rrn, id, password);
 }

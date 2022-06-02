@@ -27,4 +27,12 @@ add_executable(hw3
         evaluateSatisfaction.h
         checkPurchasedProduct.cpp
         checkPurchasedProduct.h
+        signUp.h
+        signUp.cpp
+        signOut.h
+        signOut.cpp
+        signIn.h
+        signIn.cpp
+        withdrawal.h
+        withdrawal.cpp
         )

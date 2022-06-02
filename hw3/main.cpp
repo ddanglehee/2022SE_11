@@ -26,6 +26,7 @@ ifstream fin;
 ofstream fout;
 
 vector<Product> productDB;
+vector<User> userDB;
 User* loginUser = NULL;
 
 int main()
@@ -58,13 +59,13 @@ void doTask()
                     // 회원가입
                     case 1:
                     {
-                        SignUp();
+                        SignUp::run();
                         break;
                     }
                     // 회원탈퇴
                     case 2:
                     {
-                        Withdrawal();
+                        Withdrawal::run();
                         break;
                     }
                     default:
@@ -78,13 +79,13 @@ void doTask()
                     // 로그인
                     case 1:
                     {
-                        SignIn();
+                        SignIn::run();
                         break;
                     }
                     // 로그아웃
                     case 2:
                     {
-                        SignOut();
+                        SignOut::run();
                         break;
                     }
                     default:

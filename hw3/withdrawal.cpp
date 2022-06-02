@@ -59,5 +59,5 @@ void WithdrawalUI::requestWithdrawal()
 */
 void WithdrawalUI::startInterface()
 {
-  requestWithdrawal();
+  WithdrawalUI::requestWithdrawal();
 }
