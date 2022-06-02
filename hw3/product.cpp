@@ -196,11 +196,11 @@ int Product::getTotalSales() const
 	함수 이름 : Product::getAverageSatisfaction()
 	기능	  : 해당 상품의 평균 만족도 반환
 	전달 인자 : 없음
-	반환값    : 상품의 평균 만족도(double)
+	반환값    : 상품의 평균 만족도(int)
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
 */
-double Product::getAverageSatisfaction() const
+int Product::getAverageSatisfaction() const
 {
     return this->averageSatisfaction;
 }

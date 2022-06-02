@@ -8,10 +8,10 @@
 #include "purchaseProduct.h"
 #include "evaluateSatisfaction.h"
 #include "checkPurchasedProduct.h"
-#include "RegisterProduct.h"
-#include "InquireSalesStatistics.h"
-#include "InquireProductsForSale.h"
-#include "InquireSoldOutProduct.h"
+#include "registerProduct.h"
+#include "inquireSalesStatistics.h"
+#include "inquireProductsForSale.h"
+#include "inquireSoldOutProduct.h"
 
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"

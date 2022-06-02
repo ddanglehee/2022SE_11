@@ -1,4 +1,4 @@
-#include "RegisterProduct.h"
+#include "registerProduct.h"
 extern User* loginUser;
 
 /*

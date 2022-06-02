@@ -1,4 +1,4 @@
-#include "InquireSalesStatistics.h"
+#include "inquireSalesStatistics.h"
 extern User* loginUser;
 extern vector<Product> productDB;
 
