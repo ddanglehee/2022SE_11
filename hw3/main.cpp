@@ -72,6 +72,7 @@ void doTask()
                     default:
                         break;
                 }
+                break;
             }
             case 2:
             {
@@ -91,6 +92,7 @@ void doTask()
                     default:
                         break;
                 }
+                break;
             }
             case 3:
             {
@@ -113,6 +115,7 @@ void doTask()
                     default:
                         break;
                 }
+                break;
             }
 
             case 4:
@@ -167,6 +170,7 @@ void doTask()
                         is_program_exit = 1;
                         break;
                 }
+                break;
             }
 
         }
