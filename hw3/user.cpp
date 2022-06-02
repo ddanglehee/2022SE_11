@@ -3,43 +3,18 @@
 
 using namespace std;
 
+extern vector<User> userDB;
 extern Product* searchedProduct;
 
-bool UserCollection::checkValidation(string id, string password)
+void User::addUser(string name, string rrn, string id, string password)
 {
-    // userDB에 존재하는 id, password인지 확인
-}
-
-void UserCollection::addUser(string name, string rrn, string id, string password)
-{
-    vector<User> user;
-    user.push_back({name, rrn, id, password});
+    User user = {name, rrn, id, password};
 
     // 이미 회원인 사람은 회원가입 불가
-    if(is_permutation(userDB.begin(),userDB.end(),user.begin()))
+    if(is_permutation(userDB.begin(),userDB.end(),user))
     {
-        this->userDB.insert(userDB.end(), user.begin(), user.end());
+        userDB.push_back(user);
     }
-}
-
-int UserCollection::getUserDBSize()
-{
-    return (int)this->userDB.size();
-}
-
-vector<User> UserCollection::getUserList()
-{
-    return this->userDB;
-}
-
-User UserCollection::getUserAt(int index)
-{
-    return this->userDB.at(index);
-}
-
-void UserCollection::removeUser()
-{
-
 }
 
 void User::purchaseProduct()
@@ -76,6 +51,16 @@ void User::updateProductForSale(Product *product)
 string User::getId()
 {
     return this->id;
+}
+
+void User::eraseId()
+{
+    this->id = "";
+}
+
+bool User::checkValidation()
+{
+    return true;
 }
 
 ProductCollection User::getSaleProductList()

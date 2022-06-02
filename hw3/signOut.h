@@ -22,4 +22,4 @@ public:
   static void signOutUser();
   static void printSignOutMessage();
   static void startInterface();
-}
+};

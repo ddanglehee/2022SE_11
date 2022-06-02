@@ -4,21 +4,14 @@ using namespace std;
 
 extern ifstream fin;
 extern ofstream fout;
-extern UserCollection user;
+extern User* loginUser;
 
 void Withdrawal::withdrawalUser()
 {  
-  vector<User> userList = user.getUserList();
-  int userCount = user.getUserDBSize();
-
-  // 탈퇴한 회원의 id 출력하기
+  fout << loginUser->getId() << "\n";
   
-  // for(int i = 0; i < userCount; i++)
-  // {
-  //   if()
-  // }
-  
-
+  loginUser->eraseId();
+  loginUser = NULL;
 }
 
 void Withdrawal::run()

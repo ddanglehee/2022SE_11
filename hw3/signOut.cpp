@@ -5,11 +5,13 @@ using namespace std;
 
 extern ifstream fin;
 extern ofstream fout;
-extern UserCollection user;
+extern User* loginUser;
 
 void SignOut::signOut()
 {      
-    // 로그아웃한 회원의 id 출력하기
+    fout << loginUser->getId() << "\n";
+
+    loginUser = NULL;
 }
 
 void SignOut::run()

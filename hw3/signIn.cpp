@@ -6,11 +6,11 @@ using namespace std;
 
 extern ifstream fin;
 extern ofstream fout;
-extern UserCollection user;
+extern User user;
 
 void SignIn::signIn(string id, string password)
 {
-  if(user.checkValidation)
+  if(user.checkValidation())
   {
     fout<< "2.1. 로그인\n";
     fout<< ">" << id << " " << password << "\n";
