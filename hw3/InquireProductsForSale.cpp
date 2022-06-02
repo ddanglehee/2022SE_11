@@ -1,6 +1,6 @@
 #include "InquireProductsForSale.h"
 extern User* loginUser;
-
+extern vector<Product> productDB;
 /*
 	함수 이름 : InquireProductsForSale::run(User *user)
 	기능	  :   판매 상품 리스트 요청 시 최초 동작, 해당 판매자의 모든 판매 상품 리스트 정보를 반환
@@ -13,7 +13,11 @@ void InquireProductsForSale::run()
 {
     vector<tuple<string, string, int, int>> ret;
     for(Product product : loginUser->getSaleProductList().getOwnProduct()){
-        ret.push_back(Product::getSaleProductDetails(product));
+        for(auto p : productDB){
+            if(p.getName() == product.getName()){
+                ret.push_back(Product::getSaleProductDetails(p));
+            }
+        }
     }
     InquireProductForSaleUI::startInterface(ret);
 }

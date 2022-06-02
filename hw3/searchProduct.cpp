@@ -6,7 +6,6 @@ Product* searchedProduct = NULL; // 검색된 상품이 있다면 Product, 아�
 SearchProductUI::SearchProductUI(SearchProduct* controller)
 {
     this->controller = controller;
-    
     if (fout.is_open())
     {
         fout<<"4.1. 상품 정보 검색"<<endl;

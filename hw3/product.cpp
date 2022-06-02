@@ -1,7 +1,7 @@
 #include "product.h"
 #include "user.h"
 
-extern vector<Product*> productDB;
+extern vector<Product> productDB;
 extern User* loginUser;
 
 using namespace std;
@@ -63,7 +63,7 @@ void Product::updateAverageSatisfaction(int satisfaction)
 Product Product::createProduct(string name, string company, int price, int stock)
 {
     Product product = {loginUser->getId(), name, company, price, stock}; // 생성자를 통한 새로운 Product 객체 생성
-    productDB.push_back(&product);
+    productDB.push_back(product);
     return product; // 같은 상품 등록을 위해서 Product 객체 주소로 반환
 }
 
@@ -75,8 +75,6 @@ Product Product::createProduct(string name, string company, int price, int stock
 	반환값    : 상품 명(string), 회사 명(string), 가격(int), 수량(int) , tuple로 반환
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
-
-
 */
 tuple<string, string, int, int> Product::getSaleProductDetails(Product product)
 {
@@ -92,7 +90,6 @@ tuple<string, string, int, int> Product::getSaleProductDetails(Product product)
 	반환값    : 상품 가격(int)
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
-
 */
 int Product::getPrice() const
 {
@@ -106,7 +103,6 @@ int Product::getPrice() const
 	반환값    : 상품 판매 수량(int)
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
-
 */
 int Product::getSalesQuantity() const
 {
@@ -120,7 +116,6 @@ int Product::getSalesQuantity() const
 	반환값    : 상품의 총 판매 금액(int)
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
-
 */
 int Product::getTotalSales() const
 {
