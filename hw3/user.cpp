@@ -87,7 +87,7 @@ ProductCollection User::getPurchasedProductList()
 	반환값    : id(string)
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선
-    Revsions : 1. 2022/6/2 11:17 PM , 김기선
+    Revisions : 1. 2022/6/2 11:17 PM , 김기선
                   반환 int -> string
 */
 string User::getId()
@@ -95,6 +95,14 @@ string User::getId()
     return this->id;
 }
 
+/*
+	함수 이름 : User::getRrn()
+	기능	  : 회원의 주민번호 반환
+	전달 인자 : 없음
+	반환값    : rrn(string)
+    생성 일자 : 2022/6/3 12:00 AM
+    작성자 :   이다연
+*/
 string User::getRrn()
 {
     return this->rrn;
@@ -123,7 +131,7 @@ string User::getPassword()
 */
 void User::eraseId()
 {
-    this->id = "";
+    this->rrn = "";
 }
 
 /*
@@ -134,12 +142,12 @@ void User::eraseId()
     생성 일자 : 2022/6/2 9:00 PM
     작성자 :   이다연
 */
-bool User::checkValidation(string id, string password)
+User* User::checkValidation(string id, string password)
 {
     for(auto user:userDB)
     {
         if(user.getId()==id && user.getPassword()==password)
-            return true;
+            return &user;
     }
-    return false;
+    return NULL;
 }

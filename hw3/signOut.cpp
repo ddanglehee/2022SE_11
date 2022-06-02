@@ -17,7 +17,6 @@ extern User* loginUser;
 */
 void SignOut::signOut()
 {      
-    fout<< "2.2. 로그아웃\n";
     fout << loginUser->getId() << "\n";
 
     loginUser = NULL;
@@ -46,6 +45,7 @@ void SignOut::run()
 */
 void SignOutUI::signOutUser()
 {
+    fout<< "2.2. 로그아웃\n";
     SignOut::signOut();
 }
 

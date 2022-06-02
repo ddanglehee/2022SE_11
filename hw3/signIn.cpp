@@ -6,7 +6,7 @@ using namespace std;
 
 extern ifstream fin;
 extern ofstream fout;
-extern User user;
+extern User* loginUser;
 
 /*
 	함수 이름 : SignIn::signIn(string id, string password)
@@ -18,10 +18,16 @@ extern User user;
 */
 void SignIn::signIn(string id, string password)
 {
-  if(user.checkValidation(id, password))
+  loginUser = User::checkValidation(id, password);
+
+  if(loginUser != NULL)
   {
     fout<< "2.1. 로그인\n";
     fout<< ">" << id << " " << password << "\n";
+  }
+  else
+  {
+    fout << "2.1. 로그인\n";
   }
 }
 

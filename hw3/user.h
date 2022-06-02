@@ -32,7 +32,7 @@ public:
     string getRrn();
     string getPassword();
     void eraseId();
-    static bool checkValidation(string id, string password);
+    static User* checkValidation(string id, string password);
 };
 
 #endif

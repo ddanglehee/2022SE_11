@@ -16,7 +16,6 @@ extern User* loginUser;
 */
 void Withdrawal::withdrawalUser()
 {  
-  fout<< "1.2. 회원탈퇴\n";
   fout << loginUser->getId() << "\n";
   
   loginUser->eraseId();
@@ -46,6 +45,7 @@ void Withdrawal::run()
 */
 void WithdrawalUI::requestWithdrawal()
 {
+  fout<< "1.2. 회원탈퇴\n";
   Withdrawal::withdrawalUser();
 }
 
