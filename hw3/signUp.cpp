@@ -17,7 +17,7 @@ extern ofstream fout;
 void SignUp::addNewUser(string name, string rrn, string id, string password)
 {
     User::addUser(name, rrn, id, password);
-    fout<< ">" << name << " " << rrn << " " << id << " " << password << "\n";
+    fout<< "> " << name << " " << rrn << " " << id << " " << password << "\n\n";
 }
 
 /*

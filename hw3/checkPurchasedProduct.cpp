@@ -28,7 +28,7 @@ CheckPurchasedProduct::CheckPurchasedProduct()
         {
             if(product.getName() == productInDB.getName())
             {
-                string productDetail = product.getProductDetails();
+                string productDetail = productInDB.getProductDetails();
                 purchasedProductDetails.push_back(productDetail);
             }
         }

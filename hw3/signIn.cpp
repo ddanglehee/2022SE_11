@@ -23,11 +23,11 @@ void SignIn::signIn(string id, string password)
   if(loginUser != NULL)
   {
     fout<< "2.1. 로그인\n";
-    fout<< ">" << id << " " << password << "\n";
+    fout<< "> " << id << " " << password << "\n\n";
   }
   else
   {
-    fout << "2.1. 로그인\n";
+    fout << "2.1. 로그인\n\n";
   }
 }
 

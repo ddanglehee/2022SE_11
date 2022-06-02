@@ -14,7 +14,7 @@ void InquireSoldOutProduct::run()
 {
     vector<tuple<string, string, int, int>> ret;
     for(Product product : loginUser->getSaleProductList().getOwnProduct()){
-        for(auto p : productDB){
+        for(auto& p : productDB){
             if(p.getName() == product.getName() && p.getStock() == 0){//판매자의 상품 리스트에서 수량이 0인, 즉 판매 완료된 경우 체크
                 ret.push_back(Product::getSaleProductDetails(product)); // 판매 완료 상품 정보 ret에 저장
             }
@@ -36,7 +36,7 @@ void InquireSoldOutProductUI::startInterface(vector<tuple<string, string, int, i
 {
     fout << "3.3. 판매 완료 상품 조회\n";
     sort(productsSoldOut.begin(), productsSoldOut.end());
-    for(auto [name, company, price, stock] : productsSoldOut){
+    for(auto& [name, company, price, stock] : productsSoldOut){
         fout << name << " " <<  company << " " << price << " " << stock << "\n\n"; //정보들을 vector<tuple<>>로 받아서, 상품 별로 출력
     }
 }

@@ -14,9 +14,9 @@ void InquireSalesStatistics::run()
 {
     vector<tuple<string, int, double> > ret;
     for(Product product : loginUser->getSaleProductList().getOwnProduct()){
-        for(auto p : productDB){
+        for(auto& p : productDB){
             if(p.getName()==product.getName() && p.getSalesQuantity() != 0){ //판매 수량이 1이상인 경우 체크
-                ret.push_back({product.getName(), product.getTotalSales(), product.getAverageSatisfaction()});
+                ret.push_back({p.getName(), p.getTotalSales(), p.getAverageSatisfaction()});
             }
         }
     }
@@ -34,7 +34,7 @@ void InquireSalesStatistics::run()
 void InquireSalesStatisticsUI::startInterface(vector<tuple<string, int, double> > productsSalesStatistics)
 {
     fout << "5.1. 판매 상품 통계\n";
-    for(auto [name, totalSales, averageSatisfaction] : productsSalesStatistics){
-        fout << name << " " << totalSales << " " << averageSatisfaction << "\n\n";
+    for(auto& [name, totalSales, averageSatisfaction] : productsSalesStatistics){
+        fout << "> "<< name << " " << totalSales << " " << averageSatisfaction << "\n\n";
     }
 }

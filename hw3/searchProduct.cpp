@@ -85,11 +85,10 @@ void SearchProduct::showProduct(string productName)
 */
 Product *SearchProduct::findProductByNameFromDB(string productName)
 {
-    vector<Product>::iterator ptr;
-    for (ptr = productDB.begin(); ptr != productDB.end(); ptr++)
+    for (auto& ptr: productDB)
     {
-        if (ptr->getName() == productName)
-            return &*ptr;
+        if (ptr.getName() == productName)
+            return &ptr;
     }
     // 해당 이름을 가지는 상품이 없으면 NULL 리턴
     return NULL;

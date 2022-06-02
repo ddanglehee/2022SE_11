@@ -59,13 +59,12 @@ void EvaluateSatisfactionUI::evaluateSatisfaction(string targetProductName)
 */
 string EvaluateSatisfaction::updateAverageSatisfaction(string targetProductName, int satisfaction)
 {
-    vector<Product>::iterator ptr;
-    for(ptr = productDB.begin(); ptr < productDB.end(); ptr++)
+    for(auto& ptr: productDB)
     {
-        if(ptr->getName() == targetProductName)
+        if(ptr.getName() == targetProductName)
         {
-            ptr->updateAverageSatisfaction(satisfaction);
-            return ptr->getSellerId();
+            ptr.updateAverageSatisfaction(satisfaction);
+            return ptr.getSellerId();
         }
     }
     return "";

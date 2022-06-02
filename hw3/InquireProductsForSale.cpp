@@ -13,7 +13,7 @@ void InquireProductsForSale::run()
 {
     vector<tuple<string, string, int, int>> ret;
     for(Product product : loginUser->getSaleProductList().getOwnProduct()){
-        for(auto p : productDB){
+        for(auto& p : productDB){
             if(p.getName() == product.getName()){
                 ret.push_back(Product::getSaleProductDetails(p));
             }
@@ -33,7 +33,7 @@ void InquireProductsForSale::run()
 void InquireProductForSaleUI::startInterface(vector<tuple<string, string, int, int> > productsForSale)
 {
     fout << "3.2. 등록 상품 조회\n";
-    for(auto [name, company, price, stock] : productsForSale){
+    for(auto& [name, company, price, stock] : productsForSale){
         fout << "> " << name << " " << company << " " << price << " " << stock << "\n";
     }
     fout<< endl;

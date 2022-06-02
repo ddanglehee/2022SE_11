@@ -4,6 +4,7 @@ using namespace std;
 
 extern vector<User> userDB;
 extern Product* searchedProduct;
+extern User* loginUser;
 
 /*
 	함수 이름 : User::addUser(string name, string rrn, string id, string password)
@@ -136,10 +137,12 @@ void User::eraseId()
 */
 User* User::checkValidation(string id, string password)
 {
-    for(auto user:userDB)
+    for(auto& user:userDB)
     {
-        if(user.getId()==id && user.getPassword()==password)
+        if(user.getId()==id && user.getPassword()==password){
+            loginUser = &user;
             return &user;
+        }
     }
     return NULL;
 }

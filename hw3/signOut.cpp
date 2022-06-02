@@ -17,7 +17,7 @@ extern User* loginUser;
 */
 void SignOut::signOut()
 {      
-    fout << loginUser->getId() << "\n";
+    fout <<"> "<< loginUser->getId() << "\n\n";
 
     loginUser = NULL;
 }
