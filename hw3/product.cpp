@@ -34,16 +34,6 @@ void ProductCollection::addProduct(Product product)
     this->ownedProduct.push_back(product);
 }
 
-Product ProductCollection::getProductAt(int index)
-{
-    return this->ownedProduct.at(index);
-}
-
-int ProductCollection::getOwnedProductSize()
-{
-    return (int)this->ownedProduct.size();
-}
-
 int Product::getStock()
 {
     return this->stock;

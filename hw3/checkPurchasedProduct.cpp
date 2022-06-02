@@ -5,13 +5,10 @@ CheckPurchasedProduct::CheckPurchasedProduct()
     CheckPurchasedProductUI boundary = CheckPurchasedProductUI(this);
     this->boundary = &boundary;
     
-    ProductCollection purchasedProductList = loginUser->getPurchasedProductList();
-    int purchasedProductCount = purchasedProductList.getOwnedProductSize();
-  
     vector<string> purchasedProductDetails;
-    for(int i = 0; i < purchasedProductCount; i++)
+    for(Product product : loginUser->getPurchasedProductList().getOwnProduct())
     {
-        string productDetail = purchasedProductList.getProductAt(i).getProductDetails();
+        string productDetail = product.getProductDetails();
         purchasedProductDetails.push_back(productDetail);
     }
         
