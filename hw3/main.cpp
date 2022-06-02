@@ -2,8 +2,8 @@
 #include <fstream>
 #include "signUp.h"
 #include "withdrawal.h"
-#include "SignIn.h"
-// #include "logout.h"
+#include "signIn.h"
+#include "signOut.h"
 #include "searchProduct.h"
 #include "purchaseProduct.h"
 #include "evaluateSatisfaction.h"
@@ -76,13 +76,13 @@ void doTask()
                     // 로그인
                     case 1:
                     {
-                        Login();
+                        SignIn();
                         break;
                     }
                     // 로그아웃
                     case 2:
                     {
-                        // Logout();
+                        SignOut();
                         break;
                     }
                     default:

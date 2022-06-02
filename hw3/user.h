@@ -41,6 +41,6 @@ public:
     int getUserDBSize();
     vector<User> getUserList();
     User getUserAt(int index);
-}
+};
 
 #endif
