@@ -25,7 +25,7 @@ public:
     }
     void addUser(string name, string rrn, string id, string password);
     void purchaseProduct();
-    void updateProductForSale(Product *product);
+    void updateProductForSale(Product* product);
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
     string getId();

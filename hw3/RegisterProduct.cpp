@@ -4,7 +4,7 @@ extern User* loginUser;
 /*
 	함수 이름 : RegisterProduct::addNewProduct(string name, string company, int price, int stock)
 	기능	  : 새로운 상품을 생성하고, 해당 판매자에 그 상품 등록함
-	전달 인자 : 유저 객체, 상품 명, 회사 명, 가격, 수량
+	전달 인자 : 상품 명, 회사 명, 가격, 수량
 	반환값    : 없음
     생성 일자 : 2022/5/30 7:00 PM
     작성자 :   김기선

@@ -42,6 +42,9 @@ public:
     int getSalesQuantity() const;
     int getTotalSales() const;
     double getAverageSatisfaction() const;
+    bool operator < (Product& product) {
+        return this->name < product.name;
+    }
 };
 
 
