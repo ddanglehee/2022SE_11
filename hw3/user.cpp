@@ -2,7 +2,15 @@
 
 using namespace std;
 
+extern vector<User> userDB;
 extern Product* searchedProduct;
+
+User *User::createUser(string name, string rrn, string id, string password)
+{
+    User user = {name, rrn, id, password};
+    userDB.push_back(user);
+    return &user;
+}
 
 void User::purchaseProduct()
 {
@@ -38,7 +46,7 @@ void User::updateProductForSale(Product *product)
 */
 string User::getId()
 {
-    return this->Id;
+    return this->id;
 }
 
 ProductCollection User::getSaleProductList()

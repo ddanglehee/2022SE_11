@@ -1,30 +1,26 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "product.h"
 #include "user.h"
-
 
 using namespace std;
 
 class SignUpUI;
 
-class SignUp
-{
+class SignUp {
 private:
     SignUpUI* boundary;
 public:
-    SignUp();
-    bool signUp();
+    static void addNewUser(string name, string rrn, string id, string password);
+    static void run();
 };
 
-class SignUptUI
-{
+class SignUpUI {
 private:
     SignUp* controller;
 public:
-    SignUpUI(SignUp* controller);
-    void signUp();
+    static void submitForm(string name, string rrn, string id, string password);
+    static void startInterface();
 };
 
 

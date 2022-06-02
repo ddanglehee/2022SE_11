@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include "signUp.h"
 #include "searchProduct.h"
 #include "purchaseProduct.h"
 #include "evaluateSatisfaction.h"
@@ -47,6 +48,44 @@ void doTask()
         
         switch(menu_level_1)
         {
+            case 1:
+            {
+                switch (menu_level_2) {
+                    // 회원가입
+                    case 1:
+                    {
+                        SignUp();
+                        break;
+                    }
+                    // 회원탈퇴
+                    case 2:
+                    {
+                        // Withdrawal();
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }
+            case 2:
+            {
+                switch (menu_level_2) {
+                    // 로그인
+                    case 1:
+                    {
+                        // Login();
+                        break;
+                    }
+                    // 로그아웃
+                    case 2:
+                    {
+                        // Logout();
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            }
             case 3:
             {
                 switch (menu_level_2) {
