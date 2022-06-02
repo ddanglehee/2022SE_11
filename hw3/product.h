@@ -51,9 +51,7 @@ private:
     vector<Product> ownedProduct;
 public:
     void addProduct(Product product);
-    int getOwnedProductSize();
     vector<Product> getOwnProduct();
-    Product getProductAt(int index);
 };
 
 #endif
