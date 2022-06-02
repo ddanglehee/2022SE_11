@@ -11,3 +11,15 @@
 28	1560	6758835129881629	CMakeFiles/hw3.dir/InquireSoldOutProduct.cpp.obj	5c65319ac6105a51
 44	1742	6758786346988664	CMakeFiles/hw3.dir/evaluateSatisfaction.cpp.obj	4f2c9967a550ed46
 1476	2589	6758786355642302	CMakeFiles/hw3.dir/checkPurchasedProduct.cpp.obj	2b922fa31a78bc3
+35	1515	6758864327969483	CMakeFiles/hw3.dir/RegisterProduct.cpp.obj	cacb03720f56a0fd
+18	1640	6758864328869295	CMakeFiles/hw3.dir/main.cpp.obj	b47a1cb294e455b4
+21	1651	6758864329309254	CMakeFiles/hw3.dir/searchProduct.cpp.obj	17ad8ac3ed2cce12
+32	1652	6758864328859319	CMakeFiles/hw3.dir/purchaseProduct.cpp.obj	fecfa8e1e956ed73
+1	1653	6758864329319224	CMakeFiles/hw3.dir/product.cpp.obj	6f20440a62e347a
+28	1657	6758864329189197	CMakeFiles/hw3.dir/user.cpp.obj	fef593f5d4885d3c
+39	1668	6758864329549009	CMakeFiles/hw3.dir/evaluateSatisfaction.cpp.obj	4f2c9967a550ed46
+42	1821	6758864331199336	CMakeFiles/hw3.dir/InquireSalesStatistics.cpp.obj	fca8c09fc29161b7
+24	1904	6758864332019040	CMakeFiles/hw3.dir/InquireProductsForSale.cpp.obj	f8ad52c06a4ebdd0
+46	2211	6758864335100043	CMakeFiles/hw3.dir/InquireSoldOutProduct.cpp.obj	5c65319ac6105a51
+1516	2513	6758864338131924	CMakeFiles/hw3.dir/checkPurchasedProduct.cpp.obj	2b922fa31a78bc3
+2513	2862	6758864341566368	hw3.exe	ba154ee6cdd069ff
