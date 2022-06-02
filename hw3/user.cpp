@@ -29,8 +29,6 @@ ProductCollection User::getSaleProductList()
 */
 void User::updateProductForSale(Product *product)
 {
-    cout << "check\n";
-
     this->productForSaleList.addProduct(*product);
 }
 

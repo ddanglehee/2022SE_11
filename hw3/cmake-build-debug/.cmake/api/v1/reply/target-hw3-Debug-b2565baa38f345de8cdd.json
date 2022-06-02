@@ -77,7 +77,9 @@
 				9,
 				11,
 				13,
-				15
+				15,
+				17,
+				19
 			]
 		}
 	],
@@ -122,7 +124,9 @@
 				9,
 				11,
 				13,
-				15
+				15,
+				17,
+				19
 			]
 		},
 		{
@@ -136,7 +140,9 @@
 				10,
 				12,
 				14,
-				16
+				16,
+				18,
+				20
 			]
 		}
 	],
@@ -234,6 +240,28 @@
 		{
 			"backtrace" : 1,
 			"path" : "RegisterProduct.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "evaluateSatisfaction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "evaluateSatisfaction.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "checkPurchasedProduct.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "checkPurchasedProduct.h",
 			"sourceGroupIndex" : 1
 		}
 	],
