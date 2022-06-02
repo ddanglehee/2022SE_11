@@ -23,14 +23,15 @@ public:
         this->id = id;
         this->password = password;
     }
+    void addUser(string name, string rrn, string id, string password);
     void purchaseProduct();
     void updateProductForSale(Product *product);
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
     string getId();
+    string getPassword();
     void eraseId();
-    bool checkValidation();
-    void addUser(string name, string rrn, string id, string password);
+    bool checkValidation(string id, string password);
 };
 
 #endif
