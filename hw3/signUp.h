@@ -22,5 +22,3 @@ public:
     static void submitForm(string name, string rrn, string id, string password);
     static void startInterface();
 };
-
-

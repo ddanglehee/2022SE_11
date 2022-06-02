@@ -1,13 +1,25 @@
 #include "user.h"
+#include <algorithm>
 
 using namespace std;
 
 extern Product* searchedProduct;
 
+bool UserCollection::checkValidation(string id, string password)
+{
+    // userDB에 존재하는 id, password인지 확인
+}
+
 void UserCollection::addUser(string name, string rrn, string id, string password)
 {
-    User user = {name, rrn, id, password};
-    this->userDB.push_back(user);
+    vector<User> user;
+    user.push_back({name, rrn, id, password});
+
+    // 이미 회원인 사람은 회원가입 불가
+    if(is_permutation(userDB.begin(),userDB.end(),user.begin()))
+    {
+        this->userDB.insert(userDB.end(), user.begin(), user.end());
+    }
 }
 
 int UserCollection::getUserDBSize()

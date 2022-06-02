@@ -5,7 +5,7 @@ using namespace std;
 
 extern ifstream fin;
 extern ofstream fout;
-extern User user;
+extern UserCollection user;
 
 void SignUp::addNewUser(string name, string rrn, string id, string password)
 {   

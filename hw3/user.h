@@ -35,6 +35,7 @@ class UserCollection
 private:
     vector<User> userDB;
 public:
+    bool checkValidation(string id, string password);
     void addUser(string name, string rrn, string id, string password);
     void removeUser();
     int getUserDBSize();

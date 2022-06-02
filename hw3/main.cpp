@@ -1,6 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include "signUp.h"
+#include "withdrawal.h"
+#include "SignIn.h"
+// #include "logout.h"
 #include "searchProduct.h"
 #include "purchaseProduct.h"
 #include "evaluateSatisfaction.h"
@@ -60,7 +63,7 @@ void doTask()
                     // 회원탈퇴
                     case 2:
                     {
-                        // Withdrawal();
+                        Withdrawal();
                         break;
                     }
                     default:
@@ -73,7 +76,7 @@ void doTask()
                     // 로그인
                     case 1:
                     {
-                        // Login();
+                        Login();
                         break;
                     }
                     // 로그아웃
