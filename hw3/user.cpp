@@ -29,6 +29,14 @@ void User::purchaseProduct()
     this->purchasedProductList.addProduct(*searchedProduct);
 }
 
+<<<<<<< HEAD
+=======
+ProductCollection User::getSaleProductList()
+{
+    return this->productForSaleList;
+}
+
+>>>>>>> 075745d3f6228188202422f74118d81aa5f585ce
 /*
 	함수 이름 : User::updateProductForSale(Product *product)
 	기능	  : 새로운 판매 상품을 판매자의 판매 리스트에 update

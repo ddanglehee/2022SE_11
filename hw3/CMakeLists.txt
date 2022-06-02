@@ -23,4 +23,8 @@ add_executable(hw3
         InquireSoldOutProduct.h
         RegisterProduct.cpp
         RegisterProduct.h
+        evaluateSatisfaction.cpp
+        evaluateSatisfaction.h
+        checkPurchasedProduct.cpp
+        checkPurchasedProduct.h
         )

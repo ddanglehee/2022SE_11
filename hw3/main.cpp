@@ -12,7 +12,7 @@
 #include "InquireSalesStatistics.h"
 #include "InquireProductsForSale.h"
 #include "InquireSoldOutProduct.h"
-
+#include"user.h"
 
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -35,6 +35,10 @@ int main()
     return 0;
 }
 
+void program_exit(){
+    fout << "6.1. 종료\n";
+}
+
 void doTask()
 {
     int menu_level_1, menu_level_2;
@@ -44,11 +48,12 @@ void doTask()
     
     fin.open(INPUT_FILE_NAME);
     fout.open(OUTPUT_FILE_NAME);
+    User user;
+    loginUser = &user;
     while(!is_program_exit)
     {
         fin>> menu_level_1;
         fin>> menu_level_2;
-        
         switch(menu_level_1)
         {
             case 1:
@@ -147,6 +152,7 @@ void doTask()
                 switch (menu_level_2) {
                     case 1:
                     {
+                        if(loginUser == NULL)fout << "123\n";
                         InquireSalesStatistics::run();
                         break;
                     }
@@ -155,9 +161,17 @@ void doTask()
                 }
                 break;
             }
+            case 6:
+            {
+                switch (menu_level_2) {
+                    case 1:
+                        program_exit();
+                        is_program_exit = 1;
+                        break;
+                }
+            }
 
         }
-
     }
 }
 
