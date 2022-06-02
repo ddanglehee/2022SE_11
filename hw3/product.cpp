@@ -153,8 +153,6 @@ tuple<string, string, int, int> Product::getSaleProductDetails(Product product)
     return {product.getName(), product.getCompany(), product.getPrice(), product.getStock()}; //상품 정보들 반환
 }
 
-
-
 /*
 	함수 이름 : Product::getPrice()
 	기능	  : 해당 상품의 가격 반환

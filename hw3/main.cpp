@@ -1,5 +1,9 @@
 #include <iostream>
 #include <fstream>
+#include "signUp.h"
+#include "withdrawal.h"
+#include "signIn.h"
+#include "signOut.h"
 #include "searchProduct.h"
 #include "purchaseProduct.h"
 #include "evaluateSatisfaction.h"
@@ -42,8 +46,6 @@ void doTask()
     
     fin.open(INPUT_FILE_NAME);
     fout.open(OUTPUT_FILE_NAME);
-    User user;
-    loginUser = &user;
     while(!is_program_exit)
     {
         fin>> menu_level_1;
@@ -51,9 +53,45 @@ void doTask()
         switch(menu_level_1)
         {
             case 1:
+            {
+                switch (menu_level_2) {
+                    // 회원가입
+                    case 1:
+                    {
+                        SignUp();
+                        break;
+                    }
+                    // 회원탈퇴
+                    case 2:
+                    {
+                        Withdrawal();
+                        break;
+                    }
+                    default:
+                        break;
+                }
                 break;
+            }
             case 2:
+            {
+                switch (menu_level_2) {
+                    // 로그인
+                    case 1:
+                    {
+                        SignIn();
+                        break;
+                    }
+                    // 로그아웃
+                    case 2:
+                    {
+                        SignOut();
+                        break;
+                    }
+                    default:
+                        break;
+                }
                 break;
+            }
             case 3:
             {
                 switch (menu_level_2) {
@@ -129,6 +167,7 @@ void doTask()
                         is_program_exit = 1;
                         break;
                 }
+                break;
             }
 
         }

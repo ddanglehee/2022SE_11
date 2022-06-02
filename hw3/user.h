@@ -10,15 +10,29 @@ using namespace std;
 class User
 {
 private:
-    string Id;
+    string name;
+    string rrn;
+    string password;
+    string id;
     ProductCollection productForSaleList;
     ProductCollection purchasedProductList;
 public:
+    User(string name, string rrn, string id, string password){
+        this->name = name;
+        this->rrn = rrn;
+        this->id = id;
+        this->password = password;
+    }
+    void addUser(string name, string rrn, string id, string password);
     void purchaseProduct();
     void updateProductForSale(Product* product);
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
     string getId();
+    string getRrn();
+    string getPassword();
+    void eraseId();
+    static User* checkValidation(string id, string password);
 };
 
 #endif
