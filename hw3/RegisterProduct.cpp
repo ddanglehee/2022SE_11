@@ -1,5 +1,5 @@
 #include "RegisterProduct.h"
-extern User loginUser;
+extern User* loginUser;
 
 /*
 	함수 이름 : RegisterProduct::addNewProduct(string name, string company, int price, int stock)
@@ -11,7 +11,8 @@ extern User loginUser;
 */
 void RegisterProduct::addNewProduct(string name, string company, int price, int stock)
 {
-    loginUser.updateProductForSale(Product::createProduct(name, company, price, stock)); //해당 판매자의 판매 리스트에 생성된 상품 등록
+    Product product = Product::createProduct(name, company, price, stock);
+    loginUser->updateProductForSale(&product); //해당 판매자의 판매 리스트에 생성된 상품 등록
     RegisterProductUI::printRegisterCompleteMessage(name, company, price, stock); //판매 완료 메세지 함수 호출
 }
 

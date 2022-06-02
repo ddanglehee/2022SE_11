@@ -14,6 +14,10 @@ ProductCollection User::getPurchasedProductList()
     return this->purchasedProductList;
 }
 
+ProductCollection User::getSaleProductList()
+{
+    return this->productForSaleList;
+}
 
 /*
 	함수 이름 : User::updateProductForSale(Product *product)
@@ -25,6 +29,8 @@ ProductCollection User::getPurchasedProductList()
 */
 void User::updateProductForSale(Product *product)
 {
+    cout << "check\n";
+
     this->productForSaleList.addProduct(*product);
 }
 
@@ -40,8 +46,3 @@ int User::getId()
 {
     return this->Id;
 }
-
-ProductCollection User::getSaleProductList()
-{
-    return this->productForSaleList;
-};

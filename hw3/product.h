@@ -28,7 +28,7 @@ public:
         this->salesQuantity = 0;
         this->averageSatisfaction = 0;
     }
-    static Product *createProduct(string name, string company, int price, int stock);
+    static Product createProduct(string name, string company, int price, int stock);
     static tuple<string, string, int, int> getSaleProductDetails(Product product);
     string getProductDetails();
     string getName();
