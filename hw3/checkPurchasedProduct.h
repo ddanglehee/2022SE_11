@@ -10,6 +10,7 @@ using namespace std;
 extern ifstream fin;
 extern ofstream fout;
 extern User* loginUser;
+extern vector<Product> productDB;
 class CheckPurchasedProduct;
 
 class CheckPurchasedProductUI

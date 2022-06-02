@@ -34,6 +34,7 @@ void InquireProductForSaleUI::startInterface(vector<tuple<string, string, int, i
 {
     fout << "3.2. 등록 상품 조회\n";
     for(auto [name, company, price, stock] : productsForSale){
-        fout << "> " << name << " " << company << " " << price << " " << stock << "\n\n";
+        fout << "> " << name << " " << company << " " << price << " " << stock << "\n";
     }
+    fout<< endl;
 }

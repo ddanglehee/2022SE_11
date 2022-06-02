@@ -7,12 +7,28 @@ extern ofstream fout;
 extern Product* searchedProduct;
 extern User* loginUser;
 
+/*
+    함수 이름 : PurchaseProduct::PurchaseProduct()
+    기능      : PurchaseProduct 생성자
+    전달 인자 : 없음
+    반환값    : 없음
+    생성 일자 : 2022/6/2 11:00 PM
+    작성자 :   장성희
+*/
 PurchaseProduct::PurchaseProduct()
 {
     PurchaseProductUI boundary = PurchaseProductUI(this);
     this->boundary = &boundary;
 }
 
+/*
+    함수 이름 : PurchaseProductUI::PurchaseProductUI(PurchaseProduct* controller)
+    기능      : PurchaseProductUI 생성자
+    전달 인자 : PurchaseProduct의 참조
+    반환값    : 없음
+    생성 일자 : 2022/6/2 11:00 PM
+    작성자 :   장성희
+*/
 PurchaseProductUI::PurchaseProductUI(PurchaseProduct* controller)
 {
     this->controller = controller;
@@ -20,6 +36,14 @@ PurchaseProductUI::PurchaseProductUI(PurchaseProduct* controller)
     this->purchaseProduct();
 }
 
+/*
+    함수 이름 : PurchaseProductUI::purchaseProduct()
+    기능      : 상품을 구매하고 상품의 판매자 id와 상품명을 출력
+    전달 인자 : 없음
+    반환값    : 없음
+    생성 일자 : 2022/6/2 11:00 PM
+    작성자 :   장성희
+*/
 void PurchaseProductUI::purchaseProduct()
 {
     if (searchedProduct != NULL)
@@ -29,14 +53,22 @@ void PurchaseProductUI::purchaseProduct()
             fout<< "> " + searchedProduct->getSellerId() + " " + searchedProduct->getName()<< endl;
             searchedProduct = NULL;
         } else {
-            fout<< ""<< endl;
+            fout<< "";
         }
     } else {
-        fout<< ""<< endl;
+        fout<< "";
     }
     fout<<endl;
 }
 
+/*
+    함수 이름 : PurchaseProduct::purchaseProduct()
+    기능      : 상품을 구매함
+    전달 인자 : 없음
+    반환값    : 상품 구매 성공 여부(bool)
+    생성 일자 : 2022/6/2 11:00 PM
+    작성자 :   장성희
+*/
 bool PurchaseProduct::purchaseProduct()
 {
     for(Product purchasedProduct : loginUser->getPurchasedProductList().getOwnProduct())
