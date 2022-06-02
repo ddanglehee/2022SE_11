@@ -1,17 +1,29 @@
 #include "checkPurchasedProduct.h"
 
+bool compare(Product a, Product b)
+{
+    return a < b;
+}
+
 CheckPurchasedProduct::CheckPurchasedProduct()
 {
     CheckPurchasedProductUI boundary = CheckPurchasedProductUI(this);
     this->boundary = &boundary;
     
     vector<string> purchasedProductDetails;
-    for(Product product : loginUser->getPurchasedProductList().getOwnProduct())
+    vector<Product> purchasedProductList = loginUser->getPurchasedProductList().getOwnProduct();
+    sort(purchasedProductList.begin(), purchasedProductList.end(), compare);
+    for(Product product : purchasedProductList)
     {
-        string productDetail = product.getProductDetails();
-        purchasedProductDetails.push_back(productDetail);
+        for(Product productInDB: productDB)
+        {
+            if(product.getName() == productInDB.getName())
+            {
+                string productDetail = product.getProductDetails();
+                purchasedProductDetails.push_back(productDetail);
+            }
+        }
     }
-        
     boundary.startInterface(purchasedProductDetails);
 }
 
