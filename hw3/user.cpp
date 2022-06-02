@@ -2,14 +2,32 @@
 
 using namespace std;
 
-extern vector<User> userDB;
 extern Product* searchedProduct;
 
-User *User::createUser(string name, string rrn, string id, string password)
+void UserCollection::addUser(string name, string rrn, string id, string password)
 {
     User user = {name, rrn, id, password};
-    userDB.push_back(user);
-    return &user;
+    this->userDB.push_back(user);
+}
+
+int UserCollection::getUserDBSize()
+{
+    return (int)this->userDB.size();
+}
+
+vector<User> UserCollection::getUserList()
+{
+    return this->userDB;
+}
+
+User UserCollection::getUserAt(int index)
+{
+    return this->userDB.at(index);
+}
+
+void UserCollection::removeUser()
+{
+
 }
 
 void User::purchaseProduct()
@@ -21,7 +39,6 @@ ProductCollection User::getPurchasedProductList()
 {
     return this->purchasedProductList;
 }
-
 
 /*
 	함수 이름 : User::updateProductForSale(Product *product)

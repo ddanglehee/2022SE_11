@@ -23,13 +23,23 @@ public:
         this->id = id;
         this->password = password;
     }
-    static User *createUser(string name, string rrn, string id, string password);
-    void addUser(User user);
     void purchaseProduct();
     void updateProductForSale(Product *product);
     ProductCollection getSaleProductList();
     ProductCollection getPurchasedProductList();
     string getId();
 };
+
+class UserCollection
+{
+private:
+    vector<User> userDB;
+public:
+    void addUser(string name, string rrn, string id, string password);
+    void removeUser();
+    int getUserDBSize();
+    vector<User> getUserList();
+    User getUserAt(int index);
+}
 
 #endif

@@ -9,8 +9,8 @@ extern User user;
 
 void SignUp::addNewUser(string name, string rrn, string id, string password)
 {   
-    user.addUser(*User::createUser(name, rrn, id, password));
-    fout<<"1.1.회원가입\n";
+    user.addUser(name, rrn, id, password);
+    fout<< "1.1. 회원가입\n";
     fout<< ">" << name << " " << rrn << " " << id << " " << password << "\n";
 }
 
